@@ -17,7 +17,10 @@ Like JML, LAML also provides a lot of commonly used matrix functions in the same
 In short, JML has been replaced by LAML.
 
 SourceForge
-https://sourceforge.net/projects/lamal/files
+https://sourceforge.net/projects/lamal
+
+Github:
+https://github.com/MingjieQian/LAML
 
 Documentation
 http://web.engr.illinois.edu/~mqian2/upload/projects/java/LAML/doc/index.html
