@@ -1307,10 +1307,13 @@ public class Matlab {
 		double[] resRow = null;
 		
 		if (A instanceof DenseMatrix) {
+			double[][] data = A.getData();
+			double[] row = null;
 			for (int i = 0; i < M; i++) {
 				resRow = resData[i];
+				row = data[i];
 				for (int j = 0; j < N; j++) {
-					resRow[j] = Math.exp(resRow[j]);
+					resRow[j] = Math.exp(row[j]);
 				}
 			}
 		} else if (A instanceof SparseMatrix) {
