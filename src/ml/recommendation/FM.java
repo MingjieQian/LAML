@@ -458,7 +458,7 @@ public class FM {
 			// Update V by columns
 			for (int f = 0; f < K; f++) {
 				double[] v = V[f].getPr();
-				// We should have recalculated Q[i] here
+				// We should have recalculated Q[f] here
 				// Cache q for factor f
 				/*for (int r = 0; r < n; r++) {
 					
