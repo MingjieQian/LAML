@@ -175,8 +175,7 @@ public class PriorityQueue<E> implements Iterable<E> {
 
     /**
      * Establishes the heap invariant for an element.
-     * @param key
-     * @param k
+     * @param element
      */
     public void heapify(E element) {
         int index = keyToIndexMap.get(element);
