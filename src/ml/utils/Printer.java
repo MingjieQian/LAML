@@ -773,7 +773,7 @@ public class Printer {
 	}
 	
 	/**
-	 * Print an bject and then terminate the line.
+	 * Print an object and then terminate the line.
 	 * 
 	 * @param obj an object
 	 */
