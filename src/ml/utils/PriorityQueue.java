@@ -26,6 +26,7 @@ import java.util.NoSuchElementException;
  * inner array.
  *  
  * @author Mingjie Qian
+ * @version 1.0 March 24th, 2016
  * @param <E>
  */
 public class PriorityQueue<E> implements Iterable<E> {
