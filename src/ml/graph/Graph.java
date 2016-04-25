@@ -11,7 +11,7 @@ import ml.utils.PriorityQueue;
 
 public class Graph<K> {
 
-    LinkedList<Vertex<K>> vertices;
+    public LinkedList<Vertex<K>> vertices;
     
     public Graph() {
         vertices = new LinkedList<Vertex<K>>();
@@ -20,6 +20,35 @@ public class Graph<K> {
     public void addVertex(Vertex<K> v) {
         vertices.add(v);
     }
+    
+    /**
+	 * Deep copy of this graph.
+	 */
+	public Graph<K> clone() {
+		HashMap<Vertex<K>, Vertex<K>> map = new HashMap<Vertex<K>, Vertex<K>>();
+		Graph<K> res = new Graph<K>();
+		for (Vertex<K> u : vertices) {
+			Vertex<K> u_copy = null;
+			if (map.containsKey(u)) {
+				u_copy = map.get(u);
+			} else {
+				u_copy = new Vertex<K>(u.key, u.name);
+			}
+			for (Entry<Vertex<K>, Double> entry : u.adjacencyMap.entrySet()) {
+				Vertex<K> v = entry.getKey();
+				double w = entry.getValue();
+				Vertex<K> v_copy = null;
+				if (map.containsKey(v)) {
+					v_copy = map.get(v);
+				} else {
+					v_copy = new Vertex<K>(v.key, v.name);
+				}
+				u_copy.addToAdjList(v_copy, w);
+			}
+			res.addVertex(u_copy);
+		}
+		return res;
+	}
     
     /**
      * @param args
@@ -102,7 +131,7 @@ public class Graph<K> {
         for (Vertex<Double> v : S.keySet()) {
             if (v == s)
                 continue;
-            System.out.printf("delta(%s, %s): %s    w(%s->%s): %s \n", s, v, S.get(v), v.parent, v, v.parent.adjcencyMap.get(v));
+            System.out.printf("delta(%s, %s): %s    w(%s->%s): %s \n", s, v, S.get(v), v.parent, v, v.parent.adjacencyMap.get(v));
         }
         
         G = new Graph<Double>();
@@ -199,7 +228,7 @@ public class Graph<K> {
             /*for (Pair<Vertex<K>, K> edge : u.adjcencyList) {
                 Vertex<K> v = edge.first;
                 K w = edge.second;*/
-            for (Entry<Vertex<K>, Double> entry : u.adjcencyMap.entrySet()) {
+            for (Entry<Vertex<K>, Double> entry : u.adjacencyMap.entrySet()) {
                 Vertex<K> v = entry.getKey();
                 Double w = entry.getValue();
                 /*System.out.println(v);
@@ -252,7 +281,7 @@ public class Graph<K> {
         }
         while (!Q.isEmpty()) {
             Vertex<K> u = Q.poll();
-            for (Entry<Vertex<K>, Double> entry : u.adjcencyMap.entrySet()) {
+            for (Entry<Vertex<K>, Double> entry : u.adjacencyMap.entrySet()) {
                 Vertex<K> v = entry.getKey();
                 double w = entry.getValue();
                 double w2 = S.get(u) + w;
@@ -299,7 +328,7 @@ public class Graph<K> {
         }
         
         for (Vertex<K> u : G.vertices) {
-            for (Vertex<K> v : u.adjcencyMap.keySet()) {
+            for (Vertex<K> v : u.adjacencyMap.keySet()) {
                 countMap.put(v, countMap.get(v) + 1);
             }
         }
@@ -328,7 +357,7 @@ public class Graph<K> {
                 System.err.printf("The graph has a cycle begining from vertex %s\n", u.name);
                 return null;
             }
-            for (Vertex<K> v : u.adjcencyMap.keySet()) {
+            for (Vertex<K> v : u.adjacencyMap.keySet()) {
                 countMap.put(v, countMap.get(v) - 1);
                 // v must be in Q
                 Q.heapify(v);

@@ -15,7 +15,7 @@ public class Vertex<K> {
     /**
      * w(this, v) = adjcencyMap.get(v)
      */
-    HashMap<Vertex<K>, Double> adjcencyMap;
+    public HashMap<Vertex<K>, Double> adjacencyMap;
     
     Class<K> typeClass;
     
@@ -26,7 +26,7 @@ public class Vertex<K> {
         typeClass = (Class<K>) key.getClass();
         parent = null;
         // adjcencyList = new LinkedList<Pair<Vertex<K>, K>>();
-        adjcencyMap = new HashMap<Vertex<K>, Double>();
+        adjacencyMap = new HashMap<Vertex<K>, Double>();
     }
     
     public Vertex(K key) {
@@ -53,7 +53,7 @@ public class Vertex<K> {
         this.name = name;
         parent = null;
         // adjcencyList = new LinkedList<Pair<Vertex<K>, K>>();
-        adjcencyMap = new HashMap<Vertex<K>, Double>();
+        adjacencyMap = new HashMap<Vertex<K>, Double>();
     }
     
     public Vertex(Class<K> typeClass) {
@@ -70,7 +70,7 @@ public class Vertex<K> {
     
     public void addToAdjList(Vertex<K> v, double w) {
         // adjcencyList.add(Pair.of(v, w));
-        adjcencyMap.put(v, w);
+        adjacencyMap.put(v, w);
     }
     
     @Override
@@ -78,7 +78,7 @@ public class Vertex<K> {
         if (name.isEmpty())
             return super.toString();
         else {
-            return name + ':' + key;
+        	return key == null ? name : name + ':' + key;
         }
     }
 
