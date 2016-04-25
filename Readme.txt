@@ -67,7 +67,7 @@ ml.recovery
 ml.topics
 	LDA
 ml.graph
-	Minimum spanning tree using Prim's algorithm and shortest path using Dijkstra's algorithm
+	Minimum spanning tree using Prim's algorithm, shortest path using Dijkstra's algorithm, topological order, all-pairs shortest path using Floyd-Warshall algorithm, Huffman codes, and maximum flow using Ford-Fulkerson algorithm.
 ml.recommendation
 	Factorization machines and structured sparse regression (STSR)
 	
@@ -2340,5 +2340,5 @@ ml.utils.IO.save(Yij_pred, outputFilePath);
 
 -----------------------------------
 Author: Mingjie Qian
-Version: 1.6.2
-Date: July 6th, 2015
+Version: 1.6.5
+Date: April 25th, 2016
