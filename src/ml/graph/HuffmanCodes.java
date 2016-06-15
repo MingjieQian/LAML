@@ -1,16 +1,13 @@
 package ml.graph;
 
-import static tree.TreePaddedPrinter.printPretty;
-import static tree.TreePrinter.printNode;
-import static tree.TreePrinter.printTree;
 import static ml.utils.Printer.println;
 
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-import tree.BinaryNode;
-import tree.util.Entry;
+import ml.utils.BinaryNode;
+import ml.utils.Entry;
 import ml.utils.PriorityQueue;
 
 
@@ -29,10 +26,6 @@ public class HuffmanCodes {
 		char[] characters = {'a', 'b', 'c', 'd', 'e', 'f'};
 		int[] freqencies = {45, 13, 12, 16, 9, 5};
 		BinaryNode<Entry<Integer, Character>> HuffmanTree = buildHuffmanTree(characters, freqencies);
-		printPretty(HuffmanTree);
-		printNode(HuffmanTree);
-		println("Huffman Tree:");
-		printTree(HuffmanTree);
 		HuffmanCodeTable HuffmanCodeTable = generateHuffmanCodeTable(HuffmanTree);
 		println("Encoder:");
 		println(HuffmanCodeTable.encoder);
