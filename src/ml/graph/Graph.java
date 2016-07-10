@@ -310,61 +310,37 @@ public class Graph<K> {
      * @param G
      * @return
      */
-    public static <K extends Comparable<K>> LinkedList<Vertex<K>> topologicalOrder(Graph<K> G) {
-        LinkedList<Vertex<K>> res = new LinkedList<Vertex<K>>();
-        final HashMap<Vertex<K>, Integer> countMap = new HashMap<Vertex<K>, Integer>();
-        PriorityQueue<Vertex<K>> Q = new PriorityQueue<Vertex<K>>(
-                G.vertices.size(), 
-                new Comparator<Vertex<K>>() {
-                    @Override
-                    public int compare(Vertex<K> v1, Vertex<K> v2) {
-                        return countMap.get(v2).compareTo(countMap.get(v1));
-                    }
-                }
-                );
-        
-        for (Vertex<K> u : G.vertices) {
-            countMap.put(u, 0);
-        }
-        
-        for (Vertex<K> u : G.vertices) {
-            for (Vertex<K> v : u.adjacencyMap.keySet()) {
-                countMap.put(v, countMap.get(v) + 1);
-            }
-        }
-        
-        for (Vertex<K> u : G.vertices) {
-            Q.insert(u);
-        }
-        
-        while (!Q.isEmpty()) {
-            /*
-             * Let u = Q.peek(). We have the invariance that 
-             * 1. countMap[u] = |{v | v -> u \in G(Q - u).E}| = 0
-             * 2. G(Q).E = {u -> v | v \in outNeighbors(u)} U G(Q - u).E
-             * 3. {v | v \in outNeighbors(u)} \in G(Q - u).V = Q - u
-             * 4. G(Q).V = u U G(Q - u).V.
-             * 
-             * Q' = Q - u and G' = G(Q - u) 
-             * 
-             * To prove 3, suppose there exists v s.t. v \not \in Q - u, thus
-             * v \in G.V - (Q - u) and there is a directed edge u -> v. But v
-             * has already been removed from Q so all v's parents must already
-             * be removed from Q which contradicts with that u \in Q.
-             */
-            Vertex<K> u = Q.poll();
-            if (countMap.get(u) > 0) {
-                System.err.printf("The graph has a cycle begining from vertex %s\n", u.name);
-                return null;
-            }
-            for (Vertex<K> v : u.adjacencyMap.keySet()) {
-                countMap.put(v, countMap.get(v) - 1);
-                // v must be in Q
-                Q.heapify(v);
-            }
-            res.add(u);
-        }
-        return res;
+    public static <K> LinkedList<Vertex<K>> topologicalOrder(Graph<K> G) {
+    	LinkedList<Vertex<K>> res = new LinkedList<Vertex<K>>();
+		HashMap<Vertex<K>, Integer> countMap = new HashMap<Vertex<K>, Integer>();
+		for (Vertex<K> u : G.vertices) {
+			countMap.put(u, 0);
+		}
+		for (Vertex<K> u : G.vertices) {
+			for (Vertex<K> v : u.adjacencyMap.keySet()) {
+				countMap.put(v, countMap.get(v) + 1);
+			}
+		}
+		LinkedList<Vertex<K>> queue = new LinkedList<Vertex<K>>();
+		for (Map.Entry<Vertex<K>, Integer> entry : countMap.entrySet())
+			if (entry.getValue() == 0)
+				queue.add(entry.getKey());
+		while (!queue.isEmpty()) {
+			Vertex<K> u = queue.poll();
+			res.add(u);
+			for (Vertex<K> v : u.adjacencyMap.keySet()) {
+				int count = countMap.get(v) - 1;
+				countMap.put(v, count);
+				if (count == 0) {
+					queue.add(v);
+				}
+			}
+		}
+		if (res.size() < G.vertices.size()) {
+			System.err.println("The graph has a cycle.");
+			return null;
+		}
+		return res;
     }
 
 }
