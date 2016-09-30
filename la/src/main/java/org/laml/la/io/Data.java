@@ -1,4 +1,4 @@
-package la.io;
+package org.laml.la.io;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,12 +13,12 @@ import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.utils.Pair;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.utils.Pair;
 
-import static la.utils.Printer.sprintf;
+import static org.laml.la.utils.Printer.sprintf;
 
 /**
  * A class for a data set where labels are real numbers.

@@ -1,15 +1,15 @@
-package la.matrix;
+package org.laml.la.matrix;
 
-import static la.utils.Printer.err;
-import static la.utils.Printer.sprintf;
-import static la.utils.Utility.exit;
+import static org.laml.la.utils.Printer.err;
+import static org.laml.la.utils.Printer.sprintf;
+import static org.laml.la.utils.Utility.exit;
 
 import java.io.Serializable;
 
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import la.utils.ArrayOperator;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.la.utils.ArrayOperator;
 
 /***
  * A Java implementation of dense matrices.

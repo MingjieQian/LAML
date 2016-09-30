@@ -1,22 +1,22 @@
-package ml.classification;
+package org.laml.ml.classification;
 
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.exp;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.mtimes;
-import static la.utils.Matlab.ne;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.sign;
-import static la.utils.Matlab.sumAll;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.display;
-import static la.utils.Printer.fprintf;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.exp;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.mtimes;
+import static org.laml.la.utils.Matlab.ne;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.sign;
+import static org.laml.la.utils.Matlab.sumAll;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,8 +27,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.Random;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /***
  * A Java implementation for AdaBoost.

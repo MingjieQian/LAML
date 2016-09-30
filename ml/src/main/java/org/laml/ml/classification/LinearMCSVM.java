@@ -1,11 +1,11 @@
-package ml.classification;
+package org.laml.ml.classification;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
-import static la.utils.ArrayOperator.allocateVector;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Printer.printVector;
+import static org.laml.la.utils.ArrayOperator.allocateVector;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Printer.printVector;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,13 +15,13 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import la.io.DataSet;
-import la.io.InvalidInputDataException;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.utils.ArrayOperator;
-import la.utils.Printer;
+import org.laml.la.io.DataSet;
+import org.laml.la.io.InvalidInputDataException;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.utils.ArrayOperator;
+import org.laml.la.utils.Printer;
 
 /***
  * A Java implementation of fast linear multi-class SVM by 

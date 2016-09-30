@@ -1,15 +1,15 @@
-package ml.classification;
+package org.laml.ml.classification;
 
 import java.io.Serializable;
 import java.util.TreeMap;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import static la.utils.Matlab.*;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import static org.laml.la.utils.Matlab.*;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
 
 public abstract class Classifier implements Serializable{
 

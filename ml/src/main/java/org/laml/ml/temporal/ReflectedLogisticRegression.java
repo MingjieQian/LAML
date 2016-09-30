@@ -1,9 +1,9 @@
-package ml.temporal;
+package org.laml.ml.temporal;
 
-import static la.utils.InPlaceOperator.mtimes;
-import static la.utils.InPlaceOperator.operate;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.norm;
+import static org.laml.la.utils.InPlaceOperator.mtimes;
+import static org.laml.la.utils.InPlaceOperator.operate;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.norm;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,16 +13,16 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.vector.DenseVector;
-import ml.optimization.AcceleratedProximalGradient;
-import ml.optimization.ProxL1;
-import ml.optimization.ProxPlus;
-import ml.optimization.ProximalMapping;
-import ml.options.Options;
-import la.utils.Matlab;
-import la.utils.Printer;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.ml.optimization.AcceleratedProximalGradient;
+import org.laml.ml.optimization.ProxL1;
+import org.laml.ml.optimization.ProxPlus;
+import org.laml.ml.optimization.ProximalMapping;
+import org.laml.ml.options.Options;
+import org.laml.la.utils.Matlab;
+import org.laml.la.utils.Printer;
 
 public class ReflectedLogisticRegression extends SurvivalScoreModel {
 

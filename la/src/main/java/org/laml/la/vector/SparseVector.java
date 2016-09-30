@@ -1,15 +1,15 @@
-package la.vector;
+package org.laml.la.vector;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.utils.ArrayOperator;
-import la.utils.Pair;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.utils.ArrayOperator;
+import org.laml.la.utils.Pair;
 
 /***
  * A Java implementation of sparse vectors.

@@ -1,4 +1,4 @@
-package la.utils;
+package org.laml.la.utils;
 
 public class Time {
 	

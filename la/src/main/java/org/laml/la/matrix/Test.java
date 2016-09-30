@@ -1,19 +1,19 @@
-package la.matrix;
+package org.laml.la.matrix;
 
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Printer.printVector;
-import static la.utils.Matlab.*;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Printer.printVector;
+import static org.laml.la.utils.Matlab.*;
 
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import la.decomposition.LUDecomposition;
-import la.vector.DenseVector;
-import la.vector.Vector;
-import la.utils.Pair;
-import la.utils.Matlab;
+import org.laml.la.decomposition.LUDecomposition;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.Vector;
+import org.laml.la.utils.Pair;
+import org.laml.la.utils.Matlab;
 
 public class Test {
 

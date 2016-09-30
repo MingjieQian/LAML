@@ -1,17 +1,17 @@
-package ml.clustering;
+package org.laml.ml.clustering;
 
-import static la.io.IO.loadMatrixFromDocTermCountFile;
-import static la.io.IO.saveDenseMatrix;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.getTFIDF;
-import static la.utils.Matlab.normalizeByColumns;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
-import la.matrix.Matrix;
-import ml.options.KMeansOptions;
-import ml.options.NMFOptions;
-import ml.options.Options;
+import static org.laml.la.io.IO.loadMatrixFromDocTermCountFile;
+import static org.laml.la.io.IO.saveDenseMatrix;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.getTFIDF;
+import static org.laml.la.utils.Matlab.normalizeByColumns;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.options.KMeansOptions;
+import org.laml.ml.options.NMFOptions;
+import org.laml.ml.options.Options;
 
 /***
  * A Java implementation for NMF which solves the following

@@ -1,6 +1,6 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 public class PhaseIResult {
 

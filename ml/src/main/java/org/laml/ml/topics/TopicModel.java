@@ -1,6 +1,6 @@
-package ml.topics;
+package org.laml.ml.topics;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * Abstract super class for all topic models.

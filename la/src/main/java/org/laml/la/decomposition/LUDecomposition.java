@@ -1,19 +1,19 @@
-package la.decomposition;
+package org.laml.la.decomposition;
 
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Printer.printVector;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.sparse;
-import static la.utils.Matlab.sparseMatrix2SparseRowVectors;
-import static la.utils.Matlab.sparseRowVectors2SparseMatrix;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import la.utils.ArrayOperator;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Printer.printVector;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.sparse;
+import static org.laml.la.utils.Matlab.sparseMatrix2SparseRowVectors;
+import static org.laml.la.utils.Matlab.sparseRowVectors2SparseMatrix;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.la.utils.ArrayOperator;
 
 /***
  * A Java implementation of LU decomposition using 

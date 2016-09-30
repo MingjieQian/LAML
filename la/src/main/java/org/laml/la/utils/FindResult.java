@@ -1,4 +1,4 @@
-package la.utils;
+package org.laml.la.utils;
 
 /**
  * <h4>A wrapper for the output of find function.</h4>

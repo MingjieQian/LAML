@@ -1,14 +1,14 @@
-package ml.graph;
+package org.laml.ml.graph;
 
-import static la.utils.Printer.println;
+import static org.laml.la.utils.Printer.println;
 
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-import la.utils.BinaryNode;
-import la.utils.Entry;
-import la.utils.PriorityQueue;
+import org.laml.la.utils.BinaryNode;
+import org.laml.la.utils.Entry;
+import org.laml.la.utils.PriorityQueue;
 
 
 /**

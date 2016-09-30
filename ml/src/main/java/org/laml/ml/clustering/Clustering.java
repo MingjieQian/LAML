@@ -1,14 +1,14 @@
-package ml.clustering;
+package org.laml.ml.clustering;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import ml.options.ClusteringOptions;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.ml.options.ClusteringOptions;
 
 /**
  * Abstract class for clustering algorithms.

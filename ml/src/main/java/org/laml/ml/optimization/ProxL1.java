@@ -1,9 +1,9 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.assign;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
 
 /**
  * Compute prox_th(X) where h = lambda * || X ||_1.

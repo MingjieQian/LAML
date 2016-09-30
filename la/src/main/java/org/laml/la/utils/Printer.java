@@ -1,12 +1,12 @@
-package la.utils;
+package org.laml.la.utils;
 
-import static la.utils.Utility.exit;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
+import static org.laml.la.utils.Utility.exit;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
 
 public class Printer {
 	

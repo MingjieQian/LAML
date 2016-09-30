@@ -1,4 +1,4 @@
-package la.utils;
+package org.laml.la.utils;
 
 import java.util.Comparator;
 import java.util.HashMap;

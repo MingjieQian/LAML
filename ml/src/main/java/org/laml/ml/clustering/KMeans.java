@@ -1,28 +1,28 @@
-package ml.clustering;
+package org.laml.ml.clustering;
 
-import static la.io.IO.loadMatrix;
-import static la.vector.DenseVector.buildDenseVector;
-import static la.utils.InPlaceOperator.clear;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.getTFIDF;
-import static la.utils.Matlab.l2DistanceSquare;
-import static la.utils.Matlab.max;
-import static la.utils.Matlab.min;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.normalizeByColumns;
-import static la.utils.Matlab.sum;
-import static la.utils.Printer.printMatrix;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import ml.options.KMeansOptions;
-import la.utils.ArrayOperator;
-import la.utils.Matlab;
+import static org.laml.la.io.IO.loadMatrix;
+import static org.laml.la.vector.DenseVector.buildDenseVector;
+import static org.laml.la.utils.InPlaceOperator.clear;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.getTFIDF;
+import static org.laml.la.utils.Matlab.l2DistanceSquare;
+import static org.laml.la.utils.Matlab.max;
+import static org.laml.la.utils.Matlab.min;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.normalizeByColumns;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Printer.printMatrix;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.ml.options.KMeansOptions;
+import org.laml.la.utils.ArrayOperator;
+import org.laml.la.utils.Matlab;
 
 /***
  * A Java implementation for KMeans.

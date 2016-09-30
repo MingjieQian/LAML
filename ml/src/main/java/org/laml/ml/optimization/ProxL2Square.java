@@ -1,7 +1,7 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.times;
-import la.matrix.Matrix;
+import static org.laml.la.utils.InPlaceOperator.times;
+import org.laml.la.matrix.Matrix;
 
 /**
  * Compute prox_th(X) where h = lambda * || X ||_F^2.

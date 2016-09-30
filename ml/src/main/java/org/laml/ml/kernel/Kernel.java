@@ -1,17 +1,17 @@
-package ml.kernel;
+package org.laml.ml.kernel;
 
-import static la.utils.ArrayOperator.allocate2DArray;
-import static la.utils.InPlaceOperator.expAssign;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.l2DistanceSquare;
-import static la.utils.Matlab.pow;
-import static la.utils.Matlab.sum;
-import static la.utils.Matlab.times;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.Vector;
+import static org.laml.la.utils.ArrayOperator.allocate2DArray;
+import static org.laml.la.utils.InPlaceOperator.expAssign;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.l2DistanceSquare;
+import static org.laml.la.utils.Matlab.pow;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Matlab.times;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.Vector;
 
 /***
  * Java implementation of commonly used kernel functions.

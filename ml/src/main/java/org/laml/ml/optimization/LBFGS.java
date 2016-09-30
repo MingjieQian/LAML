@@ -1,21 +1,21 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.affine;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.minus;
-import static la.utils.InPlaceOperator.minusAssign;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.InPlaceOperator.uminusAssign;
-import static la.utils.Matlab.inf;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.norm;
+import static org.laml.la.utils.InPlaceOperator.affine;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.minus;
+import static org.laml.la.utils.InPlaceOperator.minusAssign;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.InPlaceOperator.uminusAssign;
+import static org.laml.la.utils.Matlab.inf;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.norm;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * A Java implementation for the limited-memory BFGS algorithm.

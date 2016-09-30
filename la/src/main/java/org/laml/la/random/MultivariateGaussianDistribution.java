@@ -1,21 +1,21 @@
-package la.random;
+package org.laml.la.random;
 
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.mtimes;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.repmat;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.disp;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.mtimes;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.repmat;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.disp;
 
 import java.util.Random;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /***
  * A Java implementation for the multivariate Gaussian 

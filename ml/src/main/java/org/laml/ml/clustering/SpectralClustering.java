@@ -1,25 +1,25 @@
-package ml.clustering;
+package org.laml.ml.clustering;
 
-import static ml.manifold.Manifold.adjacencyDirected;
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.dotDivide;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.find;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.max;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.speye;
-import static la.utils.Matlab.sqrt;
-import static la.utils.Matlab.sum;
-import static la.utils.Printer.display;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
-import la.matrix.Matrix;
-import la.vector.Vector;
-import ml.options.ClusteringOptions;
-import ml.options.KMeansOptions;
-import ml.options.SpectralClusteringOptions;
-import la.utils.FindResult;
+import static org.laml.ml.manifold.Manifold.adjacencyDirected;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.dotDivide;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.find;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.max;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.speye;
+import static org.laml.la.utils.Matlab.sqrt;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.vector.Vector;
+import org.laml.ml.options.ClusteringOptions;
+import org.laml.ml.options.KMeansOptions;
+import org.laml.ml.options.SpectralClusteringOptions;
+import org.laml.la.utils.FindResult;
 
 /***
  * A Java implementation for spectral clustering.

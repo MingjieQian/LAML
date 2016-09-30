@@ -1,9 +1,9 @@
-package la.utils;
+package org.laml.la.utils;
 
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.mldivide;
-import static la.utils.Matlab.speye;
-import la.matrix.DenseMatrix;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.mldivide;
+import static org.laml.la.utils.Matlab.speye;
+import org.laml.la.matrix.DenseMatrix;
 
 /***
  * The {@code ArrayOperation} includes frequently used operation 

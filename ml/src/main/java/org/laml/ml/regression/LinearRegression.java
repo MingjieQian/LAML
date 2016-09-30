@@ -1,16 +1,16 @@
-package ml.regression;
+package org.laml.ml.regression;
 
-import static la.utils.ArrayOperator.allocate1DArray;
-import static la.utils.ArrayOperator.allocate2DArray;
-import static la.utils.ArrayOperator.innerProduct;
-import static la.utils.ArrayOperator.sum;
-import static la.utils.Matlab.full;
-import static la.utils.Printer.display;
-import static la.utils.Printer.errf;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printf;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
+import static org.laml.la.utils.ArrayOperator.allocate1DArray;
+import static org.laml.la.utils.ArrayOperator.allocate2DArray;
+import static org.laml.la.utils.ArrayOperator.innerProduct;
+import static org.laml.la.utils.ArrayOperator.sum;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.errf;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printf;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,10 +20,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import ml.options.Options;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.ml.options.Options;
 
 /***
  * A Java implementation of linear regression, which solves the 

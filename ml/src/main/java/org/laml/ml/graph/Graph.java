@@ -1,4 +1,4 @@
-package ml.graph;
+package org.laml.ml.graph;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import la.utils.PriorityQueue;
+import org.laml.la.utils.PriorityQueue;
 
 public class Graph<K> {
 

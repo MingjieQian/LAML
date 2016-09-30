@@ -1,4 +1,4 @@
-package ml.graph;
+package org.laml.ml.graph;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import static la.utils.Printer.*;
+import static org.laml.la.utils.Printer.*;
 
 /**
  * Maximum flow.

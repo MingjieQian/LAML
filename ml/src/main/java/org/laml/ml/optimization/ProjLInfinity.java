@@ -1,11 +1,11 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.times;
-import static la.utils.Matlab.abs;
-import static la.utils.Matlab.min;
-import static la.utils.Matlab.sign;
-import static la.utils.Matlab.times;
-import la.matrix.Matrix;
+import static org.laml.la.utils.InPlaceOperator.times;
+import static org.laml.la.utils.Matlab.abs;
+import static org.laml.la.utils.Matlab.min;
+import static org.laml.la.utils.Matlab.sign;
+import static org.laml.la.utils.Matlab.times;
+import org.laml.la.matrix.Matrix;
 
 /**
  * Compute proj_tC(X) where C = {X: || X ||_{\infty} <= 1}.

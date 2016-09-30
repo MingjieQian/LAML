@@ -1,9 +1,9 @@
-package ml.temporal;
+package org.laml.ml.temporal;
 
-import static la.utils.ArrayOperator.allocate1DArray;
-import static la.utils.Matlab.full;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import static org.laml.la.utils.ArrayOperator.allocate1DArray;
+import static org.laml.la.utils.Matlab.full;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * A abstract class for survival score models.

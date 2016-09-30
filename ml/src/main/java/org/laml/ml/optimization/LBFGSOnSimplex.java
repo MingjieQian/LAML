@@ -1,42 +1,42 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.io.IO.loadMatrix;
-import static la.utils.InPlaceOperator.affine;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.minus;
-import static la.utils.InPlaceOperator.minusAssign;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.InPlaceOperator.subplusAssign;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.gt;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.isnan;
-import static la.utils.Matlab.logicalIndexing;
-import static la.utils.Matlab.logicalIndexingAssignment;
-import static la.utils.Matlab.lt;
-import static la.utils.Matlab.max;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.not;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.or;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.sum;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.uminus;
-import static la.utils.Printer.display;
-import static la.utils.Printer.fprintf;
+import static org.laml.la.io.IO.loadMatrix;
+import static org.laml.la.utils.InPlaceOperator.affine;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.minus;
+import static org.laml.la.utils.InPlaceOperator.minusAssign;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.InPlaceOperator.subplusAssign;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.gt;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.isnan;
+import static org.laml.la.utils.Matlab.logicalIndexing;
+import static org.laml.la.utils.Matlab.logicalIndexingAssignment;
+import static org.laml.la.utils.Matlab.lt;
+import static org.laml.la.utils.Matlab.max;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.not;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.or;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.uminus;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.fprintf;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
 
 
 /**

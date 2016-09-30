@@ -1,6 +1,6 @@
-package la.matrix;
+package org.laml.la.matrix;
 
-import la.vector.Vector;
+import org.laml.la.vector.Vector;
 
 public interface Matrix {
 	

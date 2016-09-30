@@ -1,7 +1,7 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import la.matrix.Matrix;
-import static la.utils.InPlaceOperator.assign;
+import org.laml.la.matrix.Matrix;
+import static org.laml.la.utils.InPlaceOperator.assign;
 
 /**
  * Compute prox_th(X) where h = 0.

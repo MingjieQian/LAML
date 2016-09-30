@@ -1,9 +1,9 @@
-package ml.sequence;
+package org.laml.ml.sequence;
 
-import static la.utils.Matlab.*;
-import static la.utils.InPlaceOperator.*;
-import static la.utils.ArrayOperator.*;
-import static la.utils.Printer.*;
+import static org.laml.la.utils.Matlab.*;
+import static org.laml.la.utils.InPlaceOperator.*;
+import static org.laml.la.utils.ArrayOperator.*;
+import static org.laml.la.utils.Printer.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,14 +15,14 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Random;
 
-import ml.optimization.LBFGSForVector;
-import la.utils.ArrayOperator;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
+import org.laml.ml.optimization.LBFGSForVector;
+import org.laml.la.utils.ArrayOperator;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
 
 
 /***

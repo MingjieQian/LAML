@@ -1,24 +1,24 @@
-package ml.recommendation;
+package org.laml.ml.recommendation;
 
-import static la.io.IO.loadDenseVector;
-import static la.io.IO.saveVector;
-import static ml.recommendation.util.Utility.exit;
-import static ml.recommendation.util.Utility.getFeatureSize;
-import static ml.recommendation.util.Utility.loadMap;
-import static ml.recommendation.util.Utility.loadTestUserEventRelation;
-import static ml.recommendation.util.Utility.predictColdStart;
-import static ml.recommendation.util.Utility.saveMeasures;
-import static la.utils.ArrayOperator.allocate1DArray;
-import static la.utils.ArrayOperator.allocate2DArray;
-import static la.utils.ArrayOperator.assign;
-import static la.utils.ArrayOperator.clear;
-import static la.utils.ArrayOperator.innerProduct;
-import static la.utils.ArrayOperator.sum;
-import static la.utils.IO.save;
-import static la.utils.Printer.errf;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printf;
-import static la.utils.Printer.sprintf;
+import static org.laml.la.io.IO.loadDenseVector;
+import static org.laml.la.io.IO.saveVector;
+import static org.laml.ml.recommendation.util.Utility.exit;
+import static org.laml.ml.recommendation.util.Utility.getFeatureSize;
+import static org.laml.ml.recommendation.util.Utility.loadMap;
+import static org.laml.ml.recommendation.util.Utility.loadTestUserEventRelation;
+import static org.laml.ml.recommendation.util.Utility.predictColdStart;
+import static org.laml.ml.recommendation.util.Utility.saveMeasures;
+import static org.laml.la.utils.ArrayOperator.allocate1DArray;
+import static org.laml.la.utils.ArrayOperator.allocate2DArray;
+import static org.laml.la.utils.ArrayOperator.assign;
+import static org.laml.la.utils.ArrayOperator.clear;
+import static org.laml.la.utils.ArrayOperator.innerProduct;
+import static org.laml.la.utils.ArrayOperator.sum;
+import static org.laml.la.utils.IO.save;
+import static org.laml.la.utils.Printer.errf;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printf;
+import static org.laml.la.utils.Printer.sprintf;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,15 +31,15 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.TreeMap;
 
-import la.io.DataSet;
-import la.io.IO;
-import la.io.InvalidInputDataException;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import ml.recommendation.util.Utility;
+import org.laml.la.io.DataSet;
+import org.laml.la.io.IO;
+import org.laml.la.io.InvalidInputDataException;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.ml.recommendation.util.Utility;
 
 /**
  * A Java implementation of structured sparse (polynomial) 

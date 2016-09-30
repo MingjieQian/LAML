@@ -1,9 +1,9 @@
-package ml.recommendation.util;
+package org.laml.ml.recommendation.util;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import la.vector.Vector;
+import org.laml.la.vector.Vector;
 
 public class Data {
 

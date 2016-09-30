@@ -1,18 +1,18 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.affine;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.setMatrix;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.uminus;
+import static org.laml.la.utils.InPlaceOperator.affine;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.setMatrix;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.uminus;
 
 import java.util.ArrayList;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * A Java implementation for the nonlinear conjugate gradient method.

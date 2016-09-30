@@ -1,10 +1,10 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.times;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.times;
-import la.matrix.Matrix;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.times;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.times;
+import org.laml.la.matrix.Matrix;
 
 /**
  * Compute proj_tC(X) where C = {X: || X ||_2 <= 1}.

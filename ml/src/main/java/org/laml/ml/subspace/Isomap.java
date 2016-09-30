@@ -1,13 +1,13 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import static la.utils.Matlab.eq;
-import static la.utils.Matlab.logicalIndexingAssignment;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.speye;
-import static la.utils.Printer.disp;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.manifold.Manifold;
+import static org.laml.la.utils.Matlab.eq;
+import static org.laml.la.utils.Matlab.logicalIndexingAssignment;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.speye;
+import static org.laml.la.utils.Printer.disp;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.manifold.Manifold;
 
 /***
  * Isomap.

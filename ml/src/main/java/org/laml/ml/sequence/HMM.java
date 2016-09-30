@@ -1,8 +1,8 @@
-package ml.sequence;
+package org.laml.ml.sequence;
 
-import static la.utils.Printer.*;
+import static org.laml.la.utils.Printer.*;
 import static java.lang.Math.log;
-import static la.utils.ArrayOperator.*;
+import static org.laml.la.utils.ArrayOperator.*;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,35 +1,35 @@
-package ml.clustering;
+package org.laml.ml.clustering;
 
-import static la.io.IO.loadMatrixFromDocTermCountFile;
-import static la.io.IO.saveMatrix;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.operate;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.abs;
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.find;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.isnan;
-import static la.utils.Matlab.mldivide;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.subplus;
-import static la.utils.Matlab.sumAll;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
+import static org.laml.la.io.IO.loadMatrixFromDocTermCountFile;
+import static org.laml.la.io.IO.saveMatrix;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.operate;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.abs;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.find;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.isnan;
+import static org.laml.la.utils.Matlab.mldivide;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.subplus;
+import static org.laml.la.utils.Matlab.sumAll;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
 
 import java.util.ArrayList;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.vector.DenseVector;
-import la.vector.Vector;
-import ml.options.KMeansOptions;
-import ml.options.L1NMFOptions;
-import ml.options.Options;
-import la.utils.Matlab;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.Vector;
+import org.laml.ml.options.KMeansOptions;
+import org.laml.ml.options.L1NMFOptions;
+import org.laml.ml.options.Options;
+import org.laml.la.utils.Matlab;
 
 /***
  * A Java implementation for L1NMF which solves the following

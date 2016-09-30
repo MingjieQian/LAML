@@ -1,26 +1,26 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import static la.utils.ArrayOperator.colon;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.find;
-import static la.utils.Matlab.getColumns;
-import static la.utils.Matlab.getRows;
-import static la.utils.Matlab.gt;
-import static la.utils.Matlab.mrdivide;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.sparseRowVectors2SparseMatrix;
-import static la.utils.Matlab.sumAll;
-import static la.utils.Matlab.times;
-import static la.utils.Printer.disp;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import ml.manifold.Manifold;
+import static org.laml.la.utils.ArrayOperator.colon;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.find;
+import static org.laml.la.utils.Matlab.getColumns;
+import static org.laml.la.utils.Matlab.getRows;
+import static org.laml.la.utils.Matlab.gt;
+import static org.laml.la.utils.Matlab.mrdivide;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.sparseRowVectors2SparseMatrix;
+import static org.laml.la.utils.Matlab.sumAll;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Printer.disp;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.ml.manifold.Manifold;
 
 /***
  * Locally Linear Embedding (LLE).

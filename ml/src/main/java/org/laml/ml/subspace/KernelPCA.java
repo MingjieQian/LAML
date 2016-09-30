@@ -1,15 +1,15 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import static la.utils.ArrayOperator.timesAssign;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.size;
-import static la.utils.Printer.disp;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.kernel.Kernel;
+import static org.laml.la.utils.ArrayOperator.timesAssign;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Printer.disp;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.kernel.Kernel;
 
 /***
  * Kernel PCA

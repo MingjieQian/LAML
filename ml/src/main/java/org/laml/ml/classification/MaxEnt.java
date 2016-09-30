@@ -1,17 +1,17 @@
-package ml.classification;
+package org.laml.ml.classification;
 
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.log;
-import static la.utils.Matlab.logicalIndexing;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.mtimes;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.sigmoid;
-import static la.utils.Matlab.sumAll;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.display;
-import static la.utils.Printer.fprintf;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.log;
+import static org.laml.la.utils.Matlab.logicalIndexing;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.mtimes;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.sigmoid;
+import static org.laml.la.utils.Matlab.sumAll;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.fprintf;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,9 +22,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.optimization.LBFGS;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.optimization.LBFGS;
 
 /***
  * A Java implementation for the maximum entropy modeling.

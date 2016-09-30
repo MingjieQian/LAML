@@ -1,4 +1,4 @@
-package la.io;
+package org.laml.la.io;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-import la.vector.SparseVector;
-import la.vector.Vector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
 
 public class DataVectors {
 	

@@ -1,12 +1,12 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import static la.utils.ArrayOperator.divideAssign;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.sum;
-import static la.utils.Printer.disp;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import static org.laml.la.utils.ArrayOperator.divideAssign;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Printer.disp;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /***
  * Principal Component Analysis (PCA).

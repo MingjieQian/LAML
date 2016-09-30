@@ -1,13 +1,13 @@
-package ml.topics;
+package org.laml.ml.topics;
 
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.options.LDAOptions;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.options.LDAOptions;
 
-import static la.utils.Printer.*;
+import static org.laml.la.utils.Printer.*;
 
 /**
  * An interface for the Gibbs sampler implementation of LDA

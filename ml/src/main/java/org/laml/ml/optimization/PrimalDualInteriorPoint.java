@@ -1,30 +1,30 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.affine;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.Matlab.diag;
-import static la.utils.Matlab.getRows;
-import static la.utils.Matlab.gt;
-import static la.utils.Matlab.horzcat;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.lt;
-import static la.utils.Matlab.mldivide;
-import static la.utils.Matlab.mtimes;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.setMatrix;
-import static la.utils.Matlab.sumAll;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.uminus;
-import static la.utils.Matlab.vertcat;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.fprintf;
-import static la.utils.Time.tic;
+import static org.laml.la.utils.InPlaceOperator.affine;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.Matlab.diag;
+import static org.laml.la.utils.Matlab.getRows;
+import static org.laml.la.utils.Matlab.gt;
+import static org.laml.la.utils.Matlab.horzcat;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.lt;
+import static org.laml.la.utils.Matlab.mldivide;
+import static org.laml.la.utils.Matlab.mtimes;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.setMatrix;
+import static org.laml.la.utils.Matlab.sumAll;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.uminus;
+import static org.laml.la.utils.Matlab.vertcat;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Time.tic;
 
 import java.util.ArrayList;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 /***
  * A Java implementation for the Primal-dual Interior-point

@@ -1,16 +1,16 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.display;
-import static la.utils.Printer.fprintf;
-import la.matrix.Matrix;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.fprintf;
+import org.laml.la.matrix.Matrix;
 
 /**
  * Quadratic programming with bound constraints:

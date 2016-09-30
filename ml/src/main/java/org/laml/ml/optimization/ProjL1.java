@@ -1,14 +1,14 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.Matlab.sort;
-import static la.utils.Matlab.sum;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import static org.laml.la.utils.Matlab.sort;
+import static org.laml.la.utils.Matlab.sum;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
-import static la.utils.Matlab.*;
-import static la.utils.Printer.*;
-import static la.utils.InPlaceOperator.*;
-import static la.utils.ArrayOperator.*;
+import static org.laml.la.utils.Matlab.*;
+import static org.laml.la.utils.Printer.*;
+import static org.laml.la.utils.InPlaceOperator.*;
+import static org.laml.la.utils.ArrayOperator.*;
 
 /**
  * Compute proj_tC(X) where C = {X: || X ||_1 <= 1}.

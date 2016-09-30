@@ -1,18 +1,18 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import static la.utils.ArrayOperator.allocate2DArray;
-import static la.utils.ArrayOperator.timesAssign;
-import static la.utils.Matlab.eigs;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.l2Distance;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.times;
-import static la.utils.Printer.disp;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import static org.laml.la.utils.ArrayOperator.allocate2DArray;
+import static org.laml.la.utils.ArrayOperator.timesAssign;
+import static org.laml.la.utils.Matlab.eigs;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.l2Distance;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Printer.disp;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /***
  * Multi-dimensional Scaling (MDS).

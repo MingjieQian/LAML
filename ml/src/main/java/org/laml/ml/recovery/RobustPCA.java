@@ -1,29 +1,29 @@
-package ml.recovery;
+package org.laml.ml.recovery;
 
-import static ml.optimization.ShrinkageOperator.shrinkage;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.Matlab.abs;
-import static la.utils.Matlab.max;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.mtimes;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.randn;
-import static la.utils.Matlab.randperm;
-import static la.utils.Matlab.rank;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.reshape;
-import static la.utils.Matlab.setSubMatrix;
-import static la.utils.Matlab.size;
-import static la.utils.Matlab.svd;
-import static la.utils.Matlab.vec;
-import static la.utils.Matlab.zeros;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
-import la.matrix.Matrix;
+import static org.laml.ml.optimization.ShrinkageOperator.shrinkage;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.Matlab.abs;
+import static org.laml.la.utils.Matlab.max;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.mtimes;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.randn;
+import static org.laml.la.utils.Matlab.randperm;
+import static org.laml.la.utils.Matlab.rank;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.reshape;
+import static org.laml.la.utils.Matlab.setSubMatrix;
+import static org.laml.la.utils.Matlab.size;
+import static org.laml.la.utils.Matlab.svd;
+import static org.laml.la.utils.Matlab.vec;
+import static org.laml.la.utils.Matlab.zeros;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
+import org.laml.la.matrix.Matrix;
 
 /***
  * A Java implementation of robust PCA which solves the 

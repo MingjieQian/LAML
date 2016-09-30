@@ -1,8 +1,8 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import la.matrix.Matrix;
-import static la.utils.Matlab.*;
-import static la.utils.InPlaceOperator.*;
+import org.laml.la.matrix.Matrix;
+import static org.laml.la.utils.Matlab.*;
+import static org.laml.la.utils.InPlaceOperator.*;
 
 /**
  * Compute prox_th(X) where h = lambda * || X ||_F.

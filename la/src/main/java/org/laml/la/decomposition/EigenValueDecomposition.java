@@ -1,20 +1,20 @@
-package la.decomposition;
+package org.laml.la.decomposition;
 
 import static java.lang.Math.abs;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.hilb;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.hilb;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
 
 import java.util.TreeMap;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.utils.ArrayOperator;
-import la.utils.Pair;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.utils.ArrayOperator;
+import org.laml.la.utils.Pair;
 
 /***
  * A Java implementation for the eigenvalue decomposition

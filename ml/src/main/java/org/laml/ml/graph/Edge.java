@@ -1,4 +1,4 @@
-package ml.graph;
+package org.laml.ml.graph;
 
 public class Edge<K> {
     

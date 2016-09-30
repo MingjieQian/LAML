@@ -1,7 +1,7 @@
-package ml.subspace;
+package org.laml.ml.subspace;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 public abstract class DimensionalityReduction {
 	

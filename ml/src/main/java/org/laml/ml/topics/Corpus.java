@@ -1,4 +1,4 @@
-package ml.topics;
+package org.laml.ml.topics;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -12,9 +12,9 @@ import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import la.matrix.*;
+import org.laml.la.matrix.*;
 
-import la.utils.Utility;
+import org.laml.la.utils.Utility;
 
 /**
  * A class to model corpus. Term indices always start from 0, and are

@@ -1,4 +1,4 @@
-package ml.recommendation.util;
+package org.laml.ml.recommendation.util;
 
 import java.util.TreeMap;
 

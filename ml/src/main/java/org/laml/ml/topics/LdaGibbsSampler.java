@@ -23,15 +23,15 @@
 /*
  * Created on Mar 6, 2005
  */
-package ml.topics;
+package org.laml.ml.topics;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-import la.matrix.Matrix;
-import ml.options.LDAOptions;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.options.LDAOptions;
 
 /**
  * Gibbs sampler for estimating the best assignments of topics for words and

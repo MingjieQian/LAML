@@ -1,20 +1,20 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.io.IO.loadMatrix;
-import static la.io.IO.saveMatrix;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.times;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
+import static org.laml.la.io.IO.loadMatrix;
+import static org.laml.la.io.IO.saveMatrix;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * General quadratic programming:

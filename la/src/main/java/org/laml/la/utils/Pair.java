@@ -1,4 +1,4 @@
-package la.utils;
+package org.laml.la.utils;
 
 public class Pair<A extends Comparable<? super A>,
 B extends Comparable<? super B>>

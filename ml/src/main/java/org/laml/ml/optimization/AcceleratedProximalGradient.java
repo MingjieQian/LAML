@@ -1,25 +1,25 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import static la.utils.InPlaceOperator.affine;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.Matlab.eps;
-import static la.utils.Matlab.eye;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.isnan;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.ones;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.rand;
-import static la.utils.Matlab.rdivide;
-import static la.utils.Matlab.sum;
-import static la.utils.Matlab.times;
-import static la.utils.Printer.display;
-import static la.utils.Printer.fprintf;
+import static org.laml.la.utils.InPlaceOperator.affine;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.Matlab.eps;
+import static org.laml.la.utils.Matlab.eye;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.isnan;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.ones;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.rand;
+import static org.laml.la.utils.Matlab.rdivide;
+import static org.laml.la.utils.Matlab.sum;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Printer.display;
+import static org.laml.la.utils.Printer.fprintf;
 
 import java.util.ArrayList;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 /**
  * A Java implementation for the accelerated proximal gradient method.

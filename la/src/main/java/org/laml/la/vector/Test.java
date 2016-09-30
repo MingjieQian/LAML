@@ -1,15 +1,15 @@
-package la.vector;
+package org.laml.la.vector;
 
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.minus;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.sparse;
-import static la.utils.Matlab.times;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.minus;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.sparse;
+import static org.laml.la.utils.Matlab.times;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
 
 public class Test {
 

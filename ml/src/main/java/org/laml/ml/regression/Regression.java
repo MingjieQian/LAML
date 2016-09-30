@@ -1,10 +1,10 @@
-package ml.regression;
+package org.laml.ml.regression;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.options.Options;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.options.Options;
 
-import static la.utils.Matlab.*;
+import static org.laml.la.utils.Matlab.*;
 
 /***
  * Abstract super class for all regression methods.

@@ -1,23 +1,23 @@
-package la.utils;
+package org.laml.la.utils;
 
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.hilb;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.sparse;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.err;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Utility.exit;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.hilb;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.sparse;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.err;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Utility.exit;
 
 import java.util.ArrayList;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
 
 /**
  * Memory allocation and garbage collection cost considerable

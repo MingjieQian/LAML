@@ -1,4 +1,4 @@
-package ml.temporal;
+package org.laml.ml.temporal;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,16 +8,16 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import ml.optimization.AcceleratedProximalGradient;
-import ml.optimization.ProxPlus;
-import ml.options.Options;
-import ml.regression.LASSO;
-import ml.regression.Regression;
-import la.utils.InPlaceOperator;
-import la.utils.Matlab;
-import la.utils.Printer;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.ml.optimization.AcceleratedProximalGradient;
+import org.laml.ml.optimization.ProxPlus;
+import org.laml.ml.options.Options;
+import org.laml.ml.regression.LASSO;
+import org.laml.ml.regression.Regression;
+import org.laml.la.utils.InPlaceOperator;
+import org.laml.la.utils.Matlab;
+import org.laml.la.utils.Printer;
 
 public class TemporalLASSO extends SurvivalScoreModel {
 

@@ -1,4 +1,4 @@
-package ml.options;
+package org.laml.ml.options;
 
 public class ClusteringOptions {
 	

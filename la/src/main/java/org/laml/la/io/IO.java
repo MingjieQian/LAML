@@ -1,11 +1,11 @@
-package la.io;
+package org.laml.la.io;
 
-import static la.utils.Matlab.full;
-import static la.utils.Matlab.sparse;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Printer.sprintf;
+import static org.laml.la.utils.Matlab.full;
+import static org.laml.la.utils.Matlab.sparse;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Printer.sprintf;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -25,13 +25,13 @@ import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import la.vector.DenseVector;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import la.utils.Pair;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.la.vector.DenseVector;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.la.utils.Pair;
 
 public class IO {
 

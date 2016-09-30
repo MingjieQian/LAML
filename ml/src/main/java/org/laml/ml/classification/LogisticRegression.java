@@ -1,23 +1,23 @@
-package ml.classification;
+package org.laml.ml.classification;
 
-import static la.utils.ArrayOperator.plusAssign;
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.clear;
-import static la.utils.InPlaceOperator.log;
-import static la.utils.InPlaceOperator.minus;
-import static la.utils.InPlaceOperator.plus;
-import static la.utils.InPlaceOperator.sigmoid;
-import static la.utils.InPlaceOperator.times;
-import static la.utils.InPlaceOperator.timesAssign;
-import static la.utils.Matlab.eps;
-import static la.utils.Matlab.sigmoid;
-import static la.utils.Matlab.*;
-import static la.utils.Printer.disp;
-import static la.utils.Printer.fprintf;
-import static la.utils.Printer.printMatrix;
-import static la.utils.Printer.printVector;
-import static la.utils.Time.tic;
-import static la.utils.Time.toc;
+import static org.laml.la.utils.ArrayOperator.plusAssign;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.clear;
+import static org.laml.la.utils.InPlaceOperator.log;
+import static org.laml.la.utils.InPlaceOperator.minus;
+import static org.laml.la.utils.InPlaceOperator.plus;
+import static org.laml.la.utils.InPlaceOperator.sigmoid;
+import static org.laml.la.utils.InPlaceOperator.times;
+import static org.laml.la.utils.InPlaceOperator.timesAssign;
+import static org.laml.la.utils.Matlab.eps;
+import static org.laml.la.utils.Matlab.sigmoid;
+import static org.laml.la.utils.Matlab.*;
+import static org.laml.la.utils.Printer.disp;
+import static org.laml.la.utils.Printer.fprintf;
+import static org.laml.la.utils.Printer.printMatrix;
+import static org.laml.la.utils.Printer.printVector;
+import static org.laml.la.utils.Time.tic;
+import static org.laml.la.utils.Time.toc;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,18 +27,18 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import la.io.DataSet;
-import la.io.InvalidInputDataException;
-import la.matrix.DenseMatrix;
-import la.matrix.Matrix;
-import la.matrix.SparseMatrix;
-import ml.optimization.AcceleratedProximalGradient;
-import ml.optimization.LBFGS;
-import ml.optimization.ProxL1;
-import ml.optimization.ProxL2;
-import ml.optimization.ProxL2Square;
-import ml.optimization.ProxLInfinity;
-import la.utils.ArrayOperator;
+import org.laml.la.io.DataSet;
+import org.laml.la.io.InvalidInputDataException;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.matrix.Matrix;
+import org.laml.la.matrix.SparseMatrix;
+import org.laml.ml.optimization.AcceleratedProximalGradient;
+import org.laml.ml.optimization.LBFGS;
+import org.laml.ml.optimization.ProxL1;
+import org.laml.ml.optimization.ProxL2;
+import org.laml.ml.optimization.ProxL2Square;
+import org.laml.ml.optimization.ProxLInfinity;
+import org.laml.la.utils.ArrayOperator;
 
 /**
  * Multi-class logistic regression with regularization. If no regularization

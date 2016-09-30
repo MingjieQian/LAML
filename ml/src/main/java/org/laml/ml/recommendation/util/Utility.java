@@ -1,6 +1,6 @@
-package ml.recommendation.util;
+package org.laml.ml.recommendation.util;
 
-import static la.utils.ArrayOperator.sort;
+import static org.laml.la.utils.ArrayOperator.sort;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -19,11 +19,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
-import la.io.DataVectors;
-import la.io.InvalidInputDataException;
-import la.vector.SparseVector;
-import la.vector.Vector;
-import la.utils.Pair;
+import org.laml.la.io.DataVectors;
+import org.laml.la.io.InvalidInputDataException;
+import org.laml.la.vector.SparseVector;
+import org.laml.la.vector.Vector;
+import org.laml.la.utils.Pair;
 
 public class Utility {
 	
@@ -545,7 +545,7 @@ public class Utility {
 		filePath = appDirPath + File.separator + userFileName;
 		DataVectors.IdxStart = 0;
 		try {
-			dataVectors = la.io.DataVectors.readDataSetFromFile(filePath);
+			dataVectors = org.laml.la.io.DataVectors.readDataSetFromFile(filePath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InvalidInputDataException e) {
@@ -559,7 +559,7 @@ public class Utility {
 		filePath = appDirPath + File.separator + itemFileName;
 		DataVectors.IdxStart = 0;
 		try {
-			dataVectors = la.io.DataVectors.readDataSetFromFile(filePath);
+			dataVectors = org.laml.la.io.DataVectors.readDataSetFromFile(filePath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InvalidInputDataException e) {

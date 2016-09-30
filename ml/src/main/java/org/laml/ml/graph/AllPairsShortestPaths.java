@@ -1,4 +1,4 @@
-package ml.graph;
+package org.laml.ml.graph;
 
 import java.util.LinkedList;
 import java.util.List;

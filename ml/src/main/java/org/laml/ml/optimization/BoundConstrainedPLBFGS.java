@@ -1,31 +1,31 @@
-package ml.optimization;
+package org.laml.ml.optimization;
 
-import la.matrix.Matrix;
+import org.laml.la.matrix.Matrix;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import static la.utils.InPlaceOperator.assign;
-import static la.utils.InPlaceOperator.minus;
-import static la.utils.InPlaceOperator.minusAssign;
-import static la.utils.InPlaceOperator.plusAssign;
-import static la.utils.Matlab.and;
-import static la.utils.Matlab.eps;
-import static la.utils.Matlab.eq;
-import static la.utils.Matlab.gt;
-import static la.utils.Matlab.inf;
-import static la.utils.Matlab.innerProduct;
-import static la.utils.Matlab.logicalIndexing;
-import static la.utils.Matlab.logicalIndexingAssignment;
-import static la.utils.Matlab.lt;
-import static la.utils.Matlab.max;
-import static la.utils.Matlab.min;
-import static la.utils.Matlab.norm;
-import static la.utils.Matlab.plus;
-import static la.utils.Matlab.setMatrix;
-import static la.utils.Matlab.times;
-import static la.utils.Matlab.uminus;
+import static org.laml.la.utils.InPlaceOperator.assign;
+import static org.laml.la.utils.InPlaceOperator.minus;
+import static org.laml.la.utils.InPlaceOperator.minusAssign;
+import static org.laml.la.utils.InPlaceOperator.plusAssign;
+import static org.laml.la.utils.Matlab.and;
+import static org.laml.la.utils.Matlab.eps;
+import static org.laml.la.utils.Matlab.eq;
+import static org.laml.la.utils.Matlab.gt;
+import static org.laml.la.utils.Matlab.inf;
+import static org.laml.la.utils.Matlab.innerProduct;
+import static org.laml.la.utils.Matlab.logicalIndexing;
+import static org.laml.la.utils.Matlab.logicalIndexingAssignment;
+import static org.laml.la.utils.Matlab.lt;
+import static org.laml.la.utils.Matlab.max;
+import static org.laml.la.utils.Matlab.min;
+import static org.laml.la.utils.Matlab.norm;
+import static org.laml.la.utils.Matlab.plus;
+import static org.laml.la.utils.Matlab.setMatrix;
+import static org.laml.la.utils.Matlab.times;
+import static org.laml.la.utils.Matlab.uminus;
 
 /**
  * A Java implementation for the projected limited-memory BFGS algorithm

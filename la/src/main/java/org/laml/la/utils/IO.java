@@ -1,9 +1,9 @@
-package la.utils;
+package org.laml.la.utils;
 
-import static la.io.IO.saveMatrix;
-import static la.io.IO.saveVector;
-import static la.utils.Utility.exit;
-import static la.utils.Printer.sprintf;
+import static org.laml.la.io.IO.saveMatrix;
+import static org.laml.la.io.IO.saveVector;
+import static org.laml.la.utils.Utility.exit;
+import static org.laml.la.utils.Printer.sprintf;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import la.matrix.DenseMatrix;
-import la.vector.DenseVector;
+import org.laml.la.matrix.DenseMatrix;
+import org.laml.la.vector.DenseVector;
 
 public class IO {
 
