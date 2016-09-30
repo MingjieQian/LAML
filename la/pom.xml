@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.laml</groupId>
         <artifactId>laml</artifactId>
-        <version>${lam.version}</version>
+        <version>1.7.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>la</artifactId>
